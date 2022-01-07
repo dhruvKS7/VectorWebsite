@@ -1,0 +1,118 @@
+<!--
+Dhruv K. Saligram
+12/1/18
+This program finds the solutions to vector equations using a website setup
+This class acts as an input page for the user
+-->
+<!--Setting doctype to HTML below:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Setting title below:-->
+        <title>Calculation Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Linking the HTML page to the CSS and Javascript page below:-->
+        <link rel="stylesheet" type="text/css" href="styling.css"/>
+        <script src="computation.js"></script>
+    </head>
+    <body id="inputBody">
+        <!--Adding a navigation bar to the top of the page below:-->
+        <div class="header">
+            <nav>
+                <ul>
+                    <!--Linking the nav bar to other HTML pages below:-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="input.html">Calculator</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Adding break lines for page setup below:-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--Adding an opening title below:-->
+        <h1 id="header">Calculation Page</h1>
+        <div class="selectionButtons">
+            <form>
+                <!--Adding buttons for all possible calculations below:-->
+                <input type="button" class="selectionButton" onclick="twodDotProduct()" value="2D Dot Product">
+                <input type="button" class="selectionButton" onclick="threedDotProduct()" value="3D Dot Product">
+                <input type="button" class="selectionButton" onclick="threedCrossProduct()" value="3D Cross Product">
+                <input type="button" class="selectionButton" onclick="twodAngleBetween()" value="2D Angle Between">
+                <input type="button" class="selectionButton" onclick="threedAngleBetween()" value="3D Angle Between">
+                <input type="button" class="selectionButton" onclick="twodMagnitude()" value="2D Magnitude">
+                <input type="button" class="selectionButton" onclick="threedMagnitude()" value="3D Magnitude"><br>
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="wholesomeContainer">
+            <div id="breakLines">
+            </div>
+            <div id="entries">
+                <div id="lineBreak1">
+                </div>
+                <!--Creating text entry boxes for the user below:-->
+                <br>
+                <div id="firstEntry">
+                    <span id="x1Text">   X1:</span> <input id="x1" class="inputText" type="text">
+                    <span id="y1Text">   Y1:</span> <input id="y1" class="inputText" type="text">
+                    <span id="z1Text">   Z1:</span> <input id="z1" class="inputText" type="text">
+                </div>
+                <div id="lineBreak2">
+                    <hr>
+                </div>
+                <div id="secondEntry">
+                    <span id="x2Text">   X2:</span> <input id="x2" class="inputText" type="text">
+                    <span id="y2Text">   Y2:</span> <input id="y2" class="inputText" type="text">
+                    <span id="z2Text">   Z2:</span> <input id="z2" class="inputText" type="text">
+                </div>
+                <div id="lineBreak3">
+                </div>
+                <br>
+                <br>
+                <!--Creating a submit button for the user below:-->
+                <div class="selectionButtons">
+                    <form>
+                        <input id="submitButton" type="button" class="selectionButton" onclick="calculate(document.getElementById('x1').value, document.getElementById('y1').value, document.getElementById('z1').value, document.getElementById('x2').value, document.getElementById('y2').value, document.getElementById('z2').value)" value="Submit">
+                    </form>
+                </div>
+            </div>
+            <div id="container">  
+                <div id="sidebar"></div>
+                <div id="content">
+                    <!--Adding images to go along with each possible calculation below:-->
+                    <div id="dotProductTwo"><img id="dotProductTwoPic" src="2D Dot Product.png" alt="Photo that didn't load"/></div>
+                    <div id="dotProductThree"><img id="dotProductThreePic" src="3D Dot Product.png" alt="Photo that didn't load"/></div>
+                    <div id="crossProductThree"><img id="crossProductThreePic" src="3D Cross Product.png" alt="Photo that didn't load"/></div>
+                    <div id="angleBetween"><img id="angleBetweenPic" src="Angle Between.png" alt="Photo that didn't load"/></div>
+                    <div id="magnitudeTwo"><img id="magnitudeTwoPic" src="2D Magnitude.png" alt="Photo that didn't load"/></div>
+                    <div id="magnitudeThree"><img id="magnitudeThreePic" src="3D Magnitude.png" alt="Photo that didn't load"/></div>
+                </div>
+            </div>
+        </div>
+        <div id="downArrowPicDivision"><img id="downArrowPic" src="arrowPointingDown.png" alt="Photo that didn't load"/></div>
+        <!--Creating a division for the future answer to be stored in below:-->
+        <br>
+        <br>
+        <br>
+        <div id="answerDivision">
+            <p id="answerText">Answer:</p>
+            <p id="answer"></p>
+        </div>
+        <div id="extraStorage"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+</html>

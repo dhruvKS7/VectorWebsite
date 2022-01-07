@@ -1,0 +1,42 @@
+<!--
+Dhruv K. Saligram
+12/1/18
+This program finds the solutions to vector equations using a website setup
+This class acts as a welcome page for the user
+Pseudocode:
+1) User opens welcome page
+2) User goes to calculation page and chooses desired equation
+3) Page restructures to fit the setup for that equation
+4) User inputs necessary values
+5) Values are sent to method, where answer is found
+6) Answer is sent back to original input page, and displayed at the bottom of the page
+-->
+<!--Setting doctype to HTML below:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Setting title below:-->
+        <title>Welcome Page</title>
+        <meta charset="UTF-8">
+        <!--Linking the HTML page to the CSS and Javascript page below:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styling.css"/>
+        <script src="computation.js"></script>
+    </head>
+    <body>
+        <div id="welcomeCalcPicDivision"><img src="welcomeCalcImage.png" alt="Welcome photo that didn't load"/></div>
+        <br>
+        <!--Adding an opening title below:-->
+        <h1 id="openingTitle">Vector Calculator</h1>
+        <br>
+        <br>
+        <div id="openButtons">
+            <form>
+                <!--Adding an opening button below:-->
+                <input type="button" class="selectionButton" id="openButton" onclick="window.open('input.html', '_self')" value="Open the Calculator">
+            </form>
+        </div>
+        <!--Adding a welcome image to the page below:-->
+        <div id="welcomePicDivision"><img src="Welcome Image.png" alt="Welcome photo that didn't load"/></div>
+    </body>
+</html>

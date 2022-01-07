@@ -1,0 +1,285 @@
+/*
+Dhruv K. Saligram
+12/1/18
+This program finds the solutions to vector equations using a website setup
+This class formats each webpage and details color, structure, and setup of each webpage
+*/
+
+/*Importing font below:*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/*Creating settings for selection button class below:*/
+.selectionButton {
+    background-color: darkslategray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Times New Roman", cursive, sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*Creating settings for selection buttons class below:*/
+.selectionButtons {
+    text-align: center;
+}
+/*Creating settings for opening title id below:*/
+#openingTitle {
+    text-align: center;
+    font-size: 50px;
+}
+/*Creating settings for open button id below:*/
+#openButton {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Creating settings for open buttons id below:*/
+#openButtons {
+    text-align: center;
+}
+/*Creating settings for header id below:*/
+#header {
+    text-align: center;
+}
+/*Creating settings for welcome pic division id below:*/
+#welcomePicDivision {
+    text-align: center;
+}
+#welcomeCalcPicDivision {
+    text-align: center;
+}
+#welcomeCalcPicDivision img {
+    width: 30%;
+    height: 30%;
+}
+/*Creating settings for arrow pic division id below:*/
+#downArrowPicDivision {
+    text-align: center;
+}
+/*Creating settings for arrow pic id below:*/
+#downArrowPic {
+    text-align: center;
+    height: 100px;
+    width: 45px;
+}
+/*Creating settings for hr tag below:*/
+hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 7px;
+}
+/*Creating settings for input text class below:*/
+.inputText {
+    background-color: darkslategray;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Times New Roman", cursive, sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: text;
+    width: 62%;
+}
+/*Creating settings for body tag below:*/
+body {
+    margin-top: 20px;
+    background-color: rgb(128, 161, 199);
+}
+/*Creating settings for header class below:*/
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(12, 69, 89);
+}
+/*Creating settings for nav tag below:*/
+.header nav {
+    margin: auto;
+    padding: 10px 0 ; 
+}
+/*Creating settings for ul tag below:*/
+.header nav ul {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0.1) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+/*Creating settings for li tag below:*/
+.header nav ul li {
+    display: inline-block;
+}
+/*Creating settings for a tag below:*/
+.header nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+/*Creating settings for a tag while being hovered over below:*/
+.header nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+/*Creating settings for answer division id below:*/
+#answerDivision {
+    text-align: center;
+}
+/*Creating settings for answer id below:*/
+#answer {
+    /*color: darkslategrey;*/
+    font-size: 50px;
+    font-family: "Times New Roman", cursive, sans-serif;
+}
+/*Creating settings for image division id below:*/
+#dotProductTwo {
+    position:absolute;
+    z-index:-6;
+    left:20%;
+    top:25%;
+    float: right;
+}
+/*Creating settings for image division id below:*/
+#dotProductThree {
+    position:absolute;
+    z-index:-5;
+    left:20%;
+    top:40%;
+    float: right;
+}
+/*Creating settings for image division id below:*/
+#crossProductThree {
+    position:absolute;
+    z-index:-4;
+    left:30%;
+    float: right;
+    top:40%;
+}
+/*Creating settings for image division id below:*/
+#angleBetween {
+    position:absolute;
+    z-index:-3;
+    left:22.5%;
+    top:20%;
+    float: right;
+}
+/*Creating settings for image division id below:*/
+#magnitudeTwo {
+    position:absolute;
+    z-index:-2;
+    left:35%;
+    top:40%;
+    float: right;
+}
+/*Creating settings for image division id below:*/
+#magnitudeThree {
+    position:absolute;
+    z-index:-1;
+    left:30%;
+    top:40%;
+    float: right;
+}
+/*Creating settings for image id below:*/
+#angleBetweenPic {
+    width: 200%;
+    height: 200%;
+}
+/*Creating settings for image id below:*/
+#crossProductThreePic {
+    width: 200%;
+    height: 200%;
+}
+/*Creating settings for image id below:*/
+#dotProductThreePic {
+    width: 400%;
+    height: 400%;
+}
+/*Creating settings for image id below:*/
+#dotProductTwoPic {
+    width: 400%;
+    height: 400%;
+}
+/*Creating settings for image id below:*/
+#magnitudeThreePic {
+    width: 200%;
+    height: 200%;
+}
+/*Creating settings for image id below:*/
+#magnitudeTwoPic {
+    width: 200%;
+    height: 200%;
+}
+/*Creating settings for about page's text id below:*/
+#aboutText {
+    text-align: center;
+    font-size: 30px;
+}
+/*Creating settings for help page's text id below:*/
+#helpText {
+    text-align: center;
+    font-size: 150px;
+}
+/*Creating settings for help page's buttons id below:*/
+#helpButtons {
+    text-align: center;
+}
+/*Creating settings for help page's divisions id below:*/
+#helpPicDivision {
+    text-align: center;
+}
+/*Creating settings for about page's divisions id below:*/
+#aboutPicDivision {
+    text-align: center;
+}
+#container {
+    display: inline-block;
+}
+#firstEntry {
+    display: inline-block;
+}
+#secondEntry {
+    display: inline-block;
+}
+#entries {
+    float: left;
+    border-style: solid;
+    border-color: black black rgb(128, 161, 199) rgb(128, 161, 199);
+    width: 20%;
+    margin: 0;
+    position: fixed;
+    min-height: 100%;
+}
+#lineBreak1 {
+    width: 60%;
+}
+#lineBreak2 {
+    width: 100%;
+}
+#inputBody {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#wholesomeContainer {
+    height: 100%;
+}
+#answerText {
+    text-align: center;
+    font-size: 50px;
+}
+#welcomeText {
+    text-align: center;
+}
